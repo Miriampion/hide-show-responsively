@@ -16,10 +16,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-}
-
 img {
   display: inline-block;
   width: 100%;
@@ -29,7 +25,7 @@ img:nth-child(2) {
   display: none;
 }
 
-img:last-child {
+img:nth-child(4) {
   display: none;
 }
 
@@ -38,13 +34,13 @@ img:last-child {
   img {
     width: 49%;
     display: inline-block;
-    }
+  }
 
   img:nth-child(2) {
     display: inline-block;
   }
 
-  img:last-child {
+  img:nth-child(4) {
     display: inline-block;
   }
 
@@ -52,22 +48,27 @@ img:last-child {
 
 @media only screen and (min-width: 38em) {
 
+  img {
+    width: 32.5%;
+  }
+
   img:first-child {
     display: none;
   }
-
-  img {
-    width: 32%;
-  }
 }
 
-@media only screen and (min-width: 60em){
+@media only screen and (min-width: 60em) {
 
-  img:first-child {
-    display: inline-block;
+  body {
+    padding: 0 .35em;
+    text-align: center;
   }
 
   img {
     width: 24%;
+  }
+
+  img:first-child {
+    display: inline-block;
   }
 }
